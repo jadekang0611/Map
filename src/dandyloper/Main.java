@@ -12,5 +12,12 @@ public class Main {
         meals.put("dinner", "bossam");
 
         System.out.println(meals);
+
+        String lunch = meals.remove("lunch");
+        boolean hasLunch = meals.containsKey("lunch");
+        boolean hasChickenSalad = meals.containsValue("chicken salad");
+        int size = meals.size();
+
+        System.out.println(lunch + " " + hasLunch + " " + hasChickenSalad + " " + size);
     }
 }
